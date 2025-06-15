@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+            background-color: rgb(151, 215, 215);
+        }
+        .container {
+            background: linear-gradient(135deg, #dea5a5 80%);
+            padding: 2rem;
+            border-radius: 1.5rem;
+            width: 90%;
+            max-width: 360px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.13);
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+
+        .input-group,
+        .result-group {
+            margin-bottom: 1.2rem;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            font-size:1.2rem;
+            color: #f8f5f5;
+            margin-bottom: 0.4rem;
+        }
+
+        input,
+        select {
+            width: 90%;
+            padding: 0.6rem;
+            font-size: 1rem;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            background: #f9f9f9;
+            border-radius: 4px;
+        }
+
+        #result {
+            width:90%;
+            font-size: 1.2rem;
+            font-weight: 500;
+            padding: 0.4rem;
+            color:black;
+            text-align:left;
+            border-radius: 4px;
+            background-color: white;
+            margin-top: 0.5rem;
+        }
+
+        button {
+            margin-top: 1rem;
+            width: 100%;
+            padding: 0.75rem;
+            background: #007aff;
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0062cc;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- [START MAIN CONTAINER SECTION] -->
+    <div class="container">
+        <h2>Temperature converter</h2>
+
+        <!-- [START INPUT SECTION] -->
+        <div class="input-group">
+            <label for="degrees">Degrees °C</label>
+            <input type="number" id="degrees" placeholder="Enter Celsius temperature" />
+        </div>
+
+        <div class="input-group">
+            <label for="type">Convert type</label>
+            <select id="type">
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+                <option value="rankine">Rankine</option>
+            </select>
+        </div>
+        <!-- [END INPUT SECTION] -->
+
+        <!-- [START RESULT SECTION] -->
+        <div class="result-group">
+            <label>Result</label>
+            <div id="result">0</div>
+        </div>
+        <!-- [END RESULT SECTION] -->
+
+        <!-- [START BUTTON SECTION] -->
+        <button onclick="convertTemperature()">Convert</button>
+        <!-- [END BUTTON SECTION] -->
+    </div>
+    <!-- [END MAIN CONTAINER SECTION] -->
+
+    <script>
+        function convertTemperature() {
+            const degrees = parseFloat(document.getElementById('degrees').value);
+            const type = document.getElementById('type').value;
+            let result = '';
+
+            if (isNaN(degrees)) {
+                result = 'Please enter a valid number';
+            }
+            else {
+                if (type === 'fahrenheit') {
+                    const fahrenheit = (degrees * 9 / 5) + 32;
+                    result = fahrenheit.toFixed(4) + ' °F';
+                }
+                else if (type === 'kelvin') {
+                    const kelvin = degrees + 273.15;
+                    result = kelvin.toFixed(4) + ' K';
+                }
+                else if (type === 'rankine') {
+                    const rankine = (degrees + 273.15) * 9 / 5;
+                    result = rankine.toFixed(4) + ' °R';
+                }
+            }
+
+            document.getElementById('result').textContent = result;
+        }
+    </script>
+</body>
+
+</html>
