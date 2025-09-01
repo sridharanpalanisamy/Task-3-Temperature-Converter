@@ -6,8 +6,8 @@ A simple and responsive temperature converter web application built using HTML, 
 
 (Optional: Add your live link here if hosted on GitHub Pages, Netlify, Vercel, etc.)
 
-**📸 **Screenshot**
-**
+📸 **Screenshot**
+
 (Optional: Add a screenshot here of your app interface.)
 
 📁 **Features**
