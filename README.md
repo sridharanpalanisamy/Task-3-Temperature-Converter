@@ -2,7 +2,7 @@
 
    A simple and responsive temperature converter web application built using HTML, CSS, and JavaScript. This app converts temperature from Celsius to Fahrenheit, Kelvin, and Rankine with precision and a clean UI.
 
-🖥️ Live Preview
+🖥️ **Live Preview**
 
   https://chic-sherbet-301921.netlify.app/
 
