@@ -1,14 +1,14 @@
 **🌡️ Temperature Converter Web App**
 
-A simple and responsive temperature converter web application built using HTML, CSS, and JavaScript. This app converts temperature from Celsius to Fahrenheit, Kelvin, and Rankine with precision and a clean UI.
+   A simple and responsive temperature converter web application built using HTML, CSS, and JavaScript. This app converts temperature from Celsius to Fahrenheit, Kelvin, and Rankine with precision and a clean UI.
 
 🖥️ Live Preview
 
-(Optional: Add your live link here if hosted on GitHub Pages, Netlify, Vercel, etc.)
+  https://chic-sherbet-301921.netlify.app/
 
 📸 **Screenshot**
 
-(Optional: Add a screenshot here of your app interface.)
+ <img width="576" height="620" alt="image" src="https://github.com/user-attachments/assets/0c99d339-836f-4396-9879-b02d330b2283" />
 
 📁 **Features**
 
@@ -70,7 +70,9 @@ Displays an error message if input is invalid or empty
 
 📦 **Project Structure**
 📁 Temperature-Converter
+
 ├── 📄 index.html     → Main HTML file
+
 └── 📄 README.md      → Project documentation
 
 
