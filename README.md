@@ -4,7 +4,7 @@
 
 🖥️ **Live Preview**
 
-  https://chic-sherbet-301921.netlify.app/
+  Demo Link: https://chic-sherbet-301921.netlify.app/
 
 📸 **Screenshot**
 
