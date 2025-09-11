@@ -14,11 +14,11 @@
 
 🔄 Convert temperature from Celsius to:
 
-Fahrenheit (°F)
+-> Fahrenheit (°F)
 
-Kelvin (K)
+-> Kelvin (K)
 
-Rankine (°R)
+-> Rankine (°R)
 
 💡 Instant result display on button click
 
@@ -36,31 +36,31 @@ JavaScript – Conversion logic and DOM interaction
 
 🛠️ **How to Use**
 
-Clone the repository or download the source code.
+1. Clone the repository or download the source code.
 
-Open the index.html file in your browser.
+2. Open the index.html file in your browser.
 
-Enter a temperature in Celsius.
+3. Enter a temperature in Celsius.
 
-Select a conversion type from the dropdown:
+4. Select a conversion type from the dropdown:
 
-Fahrenheit
+    -> Fahrenheit
 
-Kelvin
+    -> Kelvin
 
-Rankine
+    -> Rankine
 
-Click on the "Convert" button.
+5. Click on the "Convert" button.
 
 View the converted result instantly.
 
 🔢 **Formulas Used**
 
-Fahrenheit (°F) = (°C × 9/5) + 32
+-> Fahrenheit (°F) = (°C × 9/5) + 32
 
-Kelvin (K) = °C + 273.15
+-> Kelvin (K) = °C + 273.15
 
-Rankine (°R) = (°C + 273.15) × 9/5
+-> Rankine (°R) = (°C + 273.15) × 9/5
 
 ✅ **Validation**
 
